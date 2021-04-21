@@ -86,7 +86,8 @@ def main():
     run = True
     clock = pygame.time.Clock()
     n = Network()
-    player = int(n.getP())
+    print(n.getP())
+    player = int(n.getP().split(',')[0])
     print("You are player", player)
 
     while run:
